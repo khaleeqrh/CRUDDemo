@@ -11,6 +11,7 @@ namespace CRUDDemo.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _db;
+         
         public UsersController(ApplicationDbContext _db)
         {
             this._db = _db;
@@ -18,7 +19,7 @@ namespace CRUDDemo.Controllers
         public IActionResult Index()
         {
             var users = _db.Users.ToList();
-
+            //var UsersVM = 
             return View(users);
         }
     }
