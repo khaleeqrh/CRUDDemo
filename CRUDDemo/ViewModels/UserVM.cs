@@ -21,5 +21,8 @@ namespace CRUDDemo.ViewModels
         public decimal Amount { get; set; }
         [Required]
         public string PhoneNumber { get; set; }
+        [DataType(DataType.Password)]
+        [Required]
+        public string Password { get; set; }
     }
 }

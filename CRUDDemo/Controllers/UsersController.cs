@@ -24,5 +24,13 @@ namespace CRUDDemo.Controllers
             var UsersVM = _mapper.Map<List<UserVM>>(users);
             return View(UsersVM);
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+
     }
 }
