@@ -12,5 +12,7 @@ namespace CRUDDemo.Models
         {
 
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }
