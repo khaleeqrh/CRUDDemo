@@ -8,6 +8,11 @@ namespace CRUDDemo.Controllers
 {
     public class UsersController : Controller
     {
+
+        public UsersController()
+        {
+
+        }
         public IActionResult Index()
         {
             return View();
