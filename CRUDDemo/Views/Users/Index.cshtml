@@ -4,6 +4,15 @@
 }
 
 <h1>All Users</h1>
+
+@{
+    if (String.IsNullOrWhiteSpace(TempData["Sasti"] == null ?   "" : TempData["Sasti"].ToString() )   == false)
+    {
+
+        <div class="alert alert-success">  @TempData["Sasti"] </div>
+    }
+}
+
 <table class="table">
     <tr>
         <td>First name</td>
