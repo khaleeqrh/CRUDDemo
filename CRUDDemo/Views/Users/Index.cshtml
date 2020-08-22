@@ -1,7 +1,26 @@
-﻿
+﻿@model List<CRUDDemo.ViewModels.UserVM>
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>All Users</h1>
+<table class="table">
+    <tr>
+        <td>First name</td>
+        <td>Last name</td>
+        <td>Phone number</td>
+        <td>Email</td>
+    </tr>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
 
